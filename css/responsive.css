@@ -1,0 +1,279 @@
+@media (max-width: 1200px) {
+  .menu ul {
+    gap: 18px;
+  }
+
+  .modalidades-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .mestre-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .mestre-highlight img {
+    min-height: 520px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .hero-layout {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .hero-side-inner {
+    min-height: 380px;
+    width: 100%;
+    max-width: 520px;
+    margin: 0 auto;
+  }
+
+  .instagram-post {
+    flex: 0 0 33.3333%;
+    min-width: 33.3333%;
+  }
+
+  .ct-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .plans-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 900px) {
+  .menu {
+    position: absolute;
+    top: 84px;
+    left: 0;
+    width: 100%;
+    background: #000;
+    display: none;
+    border-top: 1px solid rgba(241, 177, 0, 0.14);
+  }
+
+  .menu.active {
+    display: block;
+  }
+
+  .menu ul {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+    padding: 18px 20px;
+  }
+
+  .menu li {
+    width: 100%;
+  }
+
+  .menu a {
+    display: block;
+    width: 100%;
+    padding: 12px 0;
+  }
+
+  .btn-nav {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .hero {
+    min-height: auto;
+    padding-top: 110px;
+  }
+
+  .hero-overlay {
+    background:
+      linear-gradient(180deg, rgba(0, 0, 0, 0.88) 0%, rgba(0, 0, 0, 0.7) 40%, rgba(0, 0, 0, 0.82) 100%);
+  }
+
+  .hero-layout {
+    padding: 40px 0 70px;
+  }
+
+  .hero-content {
+    max-width: 100%;
+  }
+
+  .hero-side-inner {
+    min-height: 320px;
+    box-shadow:
+      0 0 0 10px rgba(241, 177, 0, 0.05),
+      inset 0 0 0 1px rgba(241, 177, 0, 0.18);
+  }
+
+  .impact-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .mestre-gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .instagram-head {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .instagram-post {
+    flex: 0 0 50%;
+    min-width: 50%;
+  }
+
+  .schedule-table {
+    min-width: 700px;
+  }
+}
+
+@media (max-width: 600px) {
+  .nav {
+    min-height: 74px;
+  }
+
+  .logo img {
+    width: 46px;
+    height: 46px;
+  }
+
+  .logo-text span {
+    font-size: 0.72rem;
+  }
+
+  .logo-text strong {
+    font-size: 1.05rem;
+  }
+
+  .hero {
+    padding: 120px 0 70px;
+  }
+
+  .hero-kicker {
+    font-size: 0.82rem;
+    letter-spacing: 0.1em;
+  }
+
+  .hero-text {
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+
+  .hero-side-inner {
+    min-height: 260px;
+    padding: 26px;
+  }
+
+  .hero-side-icon {
+    font-size: 3.2rem;
+  }
+
+  .hero-side-inner h3 {
+    font-size: 1.5rem;
+  }
+
+  .btn-primary,
+  .btn-secondary {
+    width: 100%;
+    min-width: auto;
+  }
+
+  .impact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .modalidades-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .mestre-gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .mestre-gallery img {
+    height: 280px;
+  }
+
+  .instagram-post {
+    flex: 0 0 85%;
+    min-width: 85%;
+  }
+
+  .insta-nav {
+    display: none;
+  }
+
+  .instagram-link-btn,
+  .instagram-link-btn.secondary {
+    width: 100%;
+  }
+
+  .plan-card li {
+    font-size: 1rem;
+  }
+
+  .ct-grid img {
+    height: 300px;
+  }
+
+  .whatsapp-float {
+    right: 16px;
+    bottom: 16px;
+    width: auto;
+    padding: 12px 14px;
+  }
+
+  .whatsapp-float span {
+    display: none;
+  }
+
+  .mestre-section,
+  .modalidades-section,
+  .instagram-section,
+  .ct-section,
+  .schedule-section,
+  .plans-section,
+  .location-section,
+  .contact-section {
+    padding: 72px 0;
+  }
+}
+
+@media (max-width: 900px) {
+  .team-head {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .team-card {
+    flex: 0 0 280px;
+    width: 280px;
+    height: 390px;
+  }
+}
+
+@media (max-width: 600px) {
+  .team-card {
+    flex: 0 0 82%;
+    width: 82%;
+    height: 400px;
+  }
+
+  .team-header-actions {
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .team-nav {
+    width: 44px;
+    height: 44px;
+  }
+}

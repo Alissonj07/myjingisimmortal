@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My King is Immortal | Martial Arts</title>
+
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+</head>
+
+z<body>
+
+  <header class="header">
+    <div class="container nav">
+      <a href="#inicio" class="logo">
+        <img src="assets/logo.svg" alt="Logo My King is Immortal" />
+        <div class="logo-text">
+          <span>MY KING IS</span>
+          <strong>IMMORTAL</strong>
+        </div>
+      </a>
+
+      <nav class="menu">
+        <ul>
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#mestre">Mestre</a></li>
+          <li><a href="#ct">Nosso CT</a></li>
+          <li><a href="#modalidades">Modalidades</a></li>
+          <li><a href="#horarios">Horários</a></li>
+          <li><a href="#planos">Planos</a></li>
+          <li><a href="#contato" class="btn-nav">Contato</a></li>
+        </ul>
+      </nav>
+
+      <button class="menu-toggle" aria-label="Abrir menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <section class="hero" id="inicio">
+    <div class="hero-overlay"></div>
+
+    <img src="assets/hero.jpeg" alt="Hero My King is Immortal" class="hero-bg" />
+
+    <div class="container hero-layout">
+      <div class="hero-content">
+        <span class="hero-kicker">MARTIAL ARTS</span>
+
+        <h1>
+          MY KING IS<br />
+          <span>IMMORTAL</span>
+        </h1>
+
+        <p class="hero-text">
+          Transforme seu corpo e mente através das artes marciais.
+          Muay Thai, Boxe, Kickboxing e Jiu Jitsu em Curitiba.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#modalidades" class="btn-primary">
+            Conheça as Aulas
+          </a>
+
+          <a href="#mestre" class="btn-secondary">
+            Saiba Mais
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-side-card">
+        <div class="hero-side-inner">
+          <div class="hero-side-icon">★</div>
+          <h3>Excelência</h3>
+          <p>
+            Treinamento forte, disciplina real e evolução constante
+            para quem quer resultado dentro e fora do tatame.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="impact-strip">
+    <div class="container impact-grid">
+      <div class="impact-item">
+        <strong>4</strong>
+        <span>Modalidades</span>
+      </div>
+      <div class="impact-item">
+        <strong>5x</strong>
+        <span>Por semana</span>
+      </div>
+      <div class="impact-item">
+        <strong>100+</strong>
+        <span>Alunos ativos</span>
+      </div>
+      <div class="impact-item">
+        <strong>CT</strong>
+        <span>Estrutura profissional</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="mestre-section" id="mestre">
+    <div class="container">
+      <div class="section-heading left">
+        <span class="section-subtitle">EXPERIÊNCIA DE VERDADE</span>
+        <h2 class="section-title">O MESTRE</h2>
+      </div>
+
+      <div class="mestre-grid">
+        <div class="mestre-text">
+          <p>
+            Gustavo “Showman” construiu uma trajetória de impacto no cenário das lutas,
+            competindo em alto nível e levando sua experiência para dentro do tatame.
+          </p>
+
+          <p>
+            No My King is Immortal, o foco vai além da técnica: disciplina, mentalidade,
+            condicionamento e constância fazem parte da formação de cada aluno.
+          </p>
+
+          <p>
+            O objetivo é entregar um treino forte, sério e transformador para quem busca
+            evolução real, seja para condicionamento, defesa pessoal ou performance.
+          </p>
+
+          <a href="https://www.instagram.com/gustavoshowman/" target="_blank" rel="noopener noreferrer"
+            class="btn-primary inline-btn">
+            Ver Instagram do Mestre
+          </a>
+        </div>
+
+        <div class="mestre-highlight">
+          <img src="assets/mestre/mestre-1.png" alt="Foto do mestre em pose de luta" />
+        </div>
+      </div>
+
+      <div class="mestre-gallery">
+        <img src="assets/mestre/mestre-2.png" alt="Mestre em competição" />
+        <img src="assets/mestre/mestre-3.png" alt="Mestre comemorando vitória" />
+        <img src="assets/mestre/mestre-4.png" alt="Mestre em luta" />
+        <img src="assets/mestre/mestre-5.png" alt="Mestre com cinturões" />
+      </div>
+    </div>
+  </section>
+
+<section class="team-section" id="equipe">
+  <div class="container team-container">
+    <div class="section-heading left team-head">
+      <div>
+        <span class="section-subtitle">NOSSA EQUIPE</span>
+        <h2 class="section-title">ATLETAS E PROFESSORES</h2>
+      </div>
+
+      <div class="team-header-actions">
+        <button class="team-nav team-prev" id="teamPrev" aria-label="Anterior">
+          &#10094;
+        </button>
+        <button class="team-nav team-next" id="teamNext" aria-label="Próximo">
+          &#10095;
+        </button>
+      </div>
+    </div>
+
+    <div class="team-slider-wrapper">
+      <div class="team-slider" id="teamCarousel">
+        <article class="team-card">
+          <img src="assets/professores-atletas/professor-1.jpeg" alt="Professor 1" />
+          <div class="team-card-overlay"></div>
+          <div class="team-card-content">
+            <span class="team-badge">Professor</span>
+            <h3>Professor</h3>
+          </div>
+        </article>
+
+        <article class="team-card">
+          <img src="assets/professores-atletas/professor-2.jpeg" alt="Professor 2" />
+          <div class="team-card-overlay"></div>
+          <div class="team-card-content">
+            <span class="team-badge">Professor</span>
+            <h3>Professor</h3>
+          </div>
+        </article>
+
+        <article class="team-card">
+          <img src="assets/professores-atletas/atleta-1.jpeg" alt="Atleta 1" />
+          <div class="team-card-overlay"></div>
+          <div class="team-card-content">
+            <span class="team-badge">Atleta</span>
+            <h3>Atleta</h3>
+          </div>
+        </article>
+
+        <article class="team-card">
+          <img src="assets/professores-atletas/atleta-2.jpeg" alt="Atleta 2" />
+          <div class="team-card-overlay"></div>
+          <div class="team-card-content">
+            <span class="team-badge">Atleta</span>
+            <h3>Atleta</h3>
+          </div>
+        </article>
+
+        <article class="team-card">
+          <img src="assets/professores-atletas/atleta-3.jpeg" alt="Atleta 3" />
+          <div class="team-card-overlay"></div>
+          <div class="team-card-content">
+            <span class="team-badge">Atleta</span>
+            <h3>Atleta</h3>
+          </div>
+        </article>
+
+        <article class="team-card">
+          <img src="assets/professores-atletas/atleta-4.jpeg" alt="Atleta 4" />
+          <div class="team-card-overlay"></div>
+          <div class="team-card-content">
+            <span class="team-badge">Atleta</span>
+            <h3>Atleta</h3>
+          </div>
+        </article>
+
+        <article class="team-card">
+          <img src="assets/professores-atletas/atleta-5.jpeg" alt="Atleta 5" />
+          <div class="team-card-overlay"></div>
+          <div class="team-card-content">
+            <span class="team-badge">Atleta</span>
+            <h3>Atleta</h3>
+          </div>
+        </article>
+
+        <article class="team-card">
+          <img src="assets/professores-atletas/atleta-6.jpeg" alt="Atleta 6" />
+          <div class="team-card-overlay"></div>
+          <div class="team-card-content">
+            <span class="team-badge">Atleta</span>
+            <h3>Atleta</h3>
+          </div>
+        </article>
+
+        <article class="team-card">
+          <img src="assets/professores-atletas/atleta-7.jpeg" alt="Atleta 7" />
+          <div class="team-card-overlay"></div>
+          <div class="team-card-content">
+            <span class="team-badge">Atleta</span>
+            <h3>Atleta</h3>
+          </div>
+        </article>
+
+        <article class="team-card">
+          <img src="assets/professores-atletas/atleta-8.jpeg" alt="Atleta 8" />
+          <div class="team-card-overlay"></div>
+          <div class="team-card-content">
+            <span class="team-badge">Atleta</span>
+            <h3>Atleta</h3>
+          </div>
+        </article>
+
+        <article class="team-card">
+          <img src="assets/professores-atletas/atleta-9.jpeg" alt="Atleta 9" />
+          <div class="team-card-overlay"></div>
+          <div class="team-card-content">
+            <span class="team-badge">Atleta</span>
+            <h3>Atleta</h3>
+          </div>
+        </article>
+
+        <article class="team-card">
+          <img src="assets/professores-atletas/atleta-10.jpeg" alt="Atleta 10" />
+          <div class="team-card-overlay"></div>
+          <div class="team-card-content">
+            <span class="team-badge">Atleta</span>
+            <h3>Atleta</h3>
+          </div>
+        </article>
+
+        <article class="team-card">
+          <img src="assets/professores-atletas/atleta-11.jpeg" alt="Atleta 11" />
+          <div class="team-card-overlay"></div>
+          <div class="team-card-content">
+            <span class="team-badge">Atleta</span>
+            <h3>Atleta</h3>
+          </div>
+        </article>
+
+        <article class="team-card">
+          <img src="assets/professores-atletas/atleta-12.jpeg" alt="Atleta 12" />
+          <div class="team-card-overlay"></div>
+          <div class="team-card-content">
+            <span class="team-badge">Atleta</span>
+            <h3>Atleta</h3>
+          </div>
+        </article>
+
+        <article class="team-card">
+          <img src="assets/professores-atletas/atleta-13.jpeg" alt="Atleta 13" />
+          <div class="team-card-overlay"></div>
+          <div class="team-card-content">
+            <span class="team-badge">Atleta</span>
+            <h3>Atleta</h3>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <section class="modalidades-section" id="modalidades">
+    <div class="container">
+      <div class="section-heading center">
+        <span class="section-subtitle">NOSSAS AULAS</span>
+        <h2 class="section-title">MODALIDADES</h2>
+      </div>
+
+      <div class="modalidades-grid">
+        <article class="modalidade-card">
+          <div class="modalidade-number">01</div>
+          <h3>Boxe</h3>
+          <p>
+            Técnica de mãos, velocidade, explosão, reflexo e condicionamento
+            para quem quer intensidade de verdade.
+          </p>
+        </article>
+
+        <article class="modalidade-card">
+          <div class="modalidade-number">02</div>
+          <h3>Kickboxing</h3>
+          <p>
+            Combinação de socos e chutes em um treino dinâmico, agressivo
+            e de alto gasto calórico.
+          </p>
+        </article>
+
+        <article class="modalidade-card">
+          <div class="modalidade-number">03</div>
+          <h3>Muay Thai</h3>
+          <p>
+            A arte das oito armas com foco em potência, resistência,
+            disciplina e evolução técnica.
+          </p>
+        </article>
+
+        <article class="modalidade-card">
+          <div class="modalidade-number">04</div>
+          <h3>Jiu Jitsu</h3>
+          <p>
+            Controle, alavancas, finalizações e estratégia para defesa pessoal,
+            competição e evolução constante.
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="instagram-section" id="instagram">
+    <div class="container instagram-container">
+      <div class="section-heading left instagram-head">
+        <div>
+          <span class="section-subtitle">ACOMPANHE NOSSO DIA A DIA</span>
+          <h2 class="section-title">INSTAGRAM</h2>
+        </div>
+
+        <div class="instagram-header-actions">
+          <a href="https://www.instagram.com/mykingisimmortal/" target="_blank" rel="noopener noreferrer"
+            class="instagram-link-btn">
+            @mykingisimmortal
+          </a>
+
+          <a href="https://www.instagram.com/gustavoshowman/" target="_blank" rel="noopener noreferrer"
+            class="instagram-link-btn secondary">
+            @gustavoshowman
+          </a>
+        </div>
+      </div>
+
+      <div class="instagram-slider-wrapper">
+        <button class="insta-nav insta-prev" id="instagramPrev" aria-label="Anterior">
+          &#10094;
+        </button>
+
+        <div class="instagram-slider" id="instagramCarousel">
+          <a class="instagram-post" href="https://www.instagram.com/mykingisimmortal/" target="_blank"
+            rel="noopener noreferrer">
+            <img src="gallery/mestre.png" alt="Publicação Instagram mestre" />
+            <span class="reel-badge">▶</span>
+          </a>
+
+          <a class="instagram-post" href="https://www.instagram.com/mykingisimmortal/" target="_blank"
+            rel="noopener noreferrer">
+            <img src="gallery/time-ct.png" alt="Publicação Instagram time CT" />
+            <span class="reel-badge">▶</span>
+          </a>
+
+          <a class="instagram-post" href="https://www.instagram.com/gustavoshowman/" target="_blank"
+            rel="noopener noreferrer">
+            <img src="assets/mestre/mestre-2.png" alt="Publicação do mestre 2" />
+            <span class="reel-badge">▶</span>
+          </a>
+
+          <a class="instagram-post" href="https://www.instagram.com/gustavoshowman/" target="_blank"
+            rel="noopener noreferrer">
+            <img src="assets/mestre/mestre-3.png" alt="Publicação do mestre 3" />
+            <span class="reel-badge">▶</span>
+          </a>
+
+          <a class="instagram-post" href="https://www.instagram.com/gustavoshowman/" target="_blank"
+            rel="noopener noreferrer">
+            <img src="assets/mestre/mestre-4.png" alt="Publicação do mestre 4" />
+            <span class="reel-badge">▶</span>
+          </a>
+
+          <a class="instagram-post" href="https://www.instagram.com/gustavoshowman/" target="_blank"
+            rel="noopener noreferrer">
+            <img src="assets/mestre/mestre-5.png" alt="Publicação do mestre 5" />
+            <span class="reel-badge">▶</span>
+          </a>
+
+          <a class="instagram-post" href="https://www.instagram.com/mykingisimmortal/" target="_blank"
+            rel="noopener noreferrer">
+            <img src="assets/ct/ct-1.png" alt="Publicação do CT 1" />
+            <span class="reel-badge">▶</span>
+          </a>
+
+          <a class="instagram-post" href="https://www.instagram.com/mykingisimmortal/" target="_blank"
+            rel="noopener noreferrer">
+            <img src="assets/ct/ct-2.png" alt="Publicação do CT 2" />
+            <span class="reel-badge">▶</span>
+          </a>
+        </div>
+
+        <button class="insta-nav insta-next" id="instagramNext" aria-label="Próximo">
+          &#10095;
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <section class="ct-section" id="ct">
+    <div class="container">
+      <div class="section-heading left">
+        <span class="section-subtitle">ESTRUTURA E AMBIENTE</span>
+        <h2 class="section-title">NOSSO CT</h2>
+      </div>
+
+      <div class="ct-grid">
+        <img src="assets/ct/ct-1.png" alt="Foto interna do CT 1" />
+        <img src="assets/ct/ct-2.png" alt="Foto interna do CT 2" />
+        <img src="assets/ct/ct-3.png" alt="Foto interna do CT 3" />
+        <img src="gallery/time-ct.png" alt="Time do CT" />
+      </div>
+    </div>
+  </section>
+
+  <section class="schedule-section" id="horarios">
+    <div class="container">
+      <div class="section-heading center">
+        <span class="section-subtitle">ORGANIZE SUA ROTINA</span>
+        <h2 class="section-title">HORÁRIOS</h2>
+      </div>
+
+      <div class="schedule-header-info">
+        <p><strong>Endereço:</strong> Rua Duarte Cesino de Medeiros, nº 273</p>
+        <p>Cajuru — Curitiba — PR</p>
+        <p>(a 80m do Shopping Jardim das Américas)</p>
+      </div>
+
+      <div class="schedule-table-wrapper">
+        <table class="schedule-table">
+          <thead>
+            <tr>
+              <th>Horário</th>
+              <th>Seg</th>
+              <th>Ter</th>
+              <th>Qua</th>
+              <th>Qui</th>
+              <th>Sex</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>12h00</td>
+              <td>Jiu Jitsu</td>
+              <td>—</td>
+              <td>Jiu Jitsu</td>
+              <td>—</td>
+              <td>Jiu Jitsu</td>
+            </tr>
+            <tr>
+              <td>14h00</td>
+              <td>Kickboxing</td>
+              <td>—</td>
+              <td>Kickboxing</td>
+              <td>—</td>
+              <td>Kickboxing</td>
+            </tr>
+            <tr>
+              <td>18h00</td>
+              <td>Boxe</td>
+              <td>Fight Kids</td>
+              <td>Boxe</td>
+              <td>Fight Kids</td>
+              <td>Boxe</td>
+            </tr>
+            <tr>
+              <td>19h00</td>
+              <td>Kickboxing</td>
+              <td>Muay Thai</td>
+              <td>Kickboxing</td>
+              <td>Muay Thai</td>
+              <td>Kickboxing</td>
+            </tr>
+            <tr>
+              <td>20h00</td>
+              <td>Jiu Jitsu</td>
+              <td>Jiu Jitsu</td>
+              <td>Jiu Jitsu</td>
+              <td>Jiu Jitsu</td>
+              <td>Jiu Jitsu</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section class="plans-section" id="planos">
+    <div class="container">
+      <div class="section-heading center">
+        <span class="section-subtitle">INVESTIMENTO</span>
+        <h2 class="section-title">PLANOS</h2>
+      </div>
+
+      <p class="plans-intro">
+        Trabalhamos com 04 modalidades: Boxe, Kickboxing, Muay Thai e Jiu Jitsu.
+      </p>
+
+      <div class="plans-grid">
+        <div class="plan-card">
+          <div class="plan-card-title">Apenas 01 modalidade</div>
+          <ul>
+            <li><strong>Mensal</strong> — R$ 200,00</li>
+            <li><strong>Trimestral</strong> — R$ 180,00</li>
+            <li><strong>Semestral</strong> — R$ 160,00</li>
+            <li><strong>Anual</strong> — R$ 150,00</li>
+          </ul>
+        </div>
+
+        <div class="plan-card featured">
+          <div class="plan-card-title">Livre — 02 ou mais modalidades</div>
+          <ul>
+            <li><strong>Mensal</strong> — R$ 250,00</li>
+            <li><strong>Trimestral</strong> — R$ 210,00</li>
+            <li><strong>Semestral</strong> — R$ 190,00</li>
+            <li><strong>Anual</strong> — R$ 180,00</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="plans-notes">
+        <p>• Aceitamos dinheiro, cartão de débito, crédito, Pix e contratação pelo aplicativo.</p>
+        <p>• Para aulas de Muay Thai, é possível fazer Muay Thai & Kickboxing pagando apenas o valor de 01 modalidade.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="location-section" id="localizacao">
+    <div class="container">
+      <div class="section-heading center">
+        <span class="section-subtitle">VENHA NOS VISITAR</span>
+        <h2 class="section-title">LOCALIZAÇÃO</h2>
+      </div>
+
+      <p class="placeholder-text">
+        Rua Duarte Cesino de Medeiros, 273, Cajuru, Curitiba - PR
+      </p>
+
+      <div class="location-box">
+        <iframe
+          src="https://www.google.com/maps?q=Rua%20Duarte%20Cesino%20de%20Medeiros,%20273,%20Curitiba,%20PR&output=embed"
+          width="100%" height="420" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade" title="Mapa do My King is Immortal"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact-section" id="contato">
+    <div class="container">
+      <div class="section-heading center">
+        <span class="section-subtitle">FALE CONOSCO</span>
+        <h2 class="section-title">CONTATO</h2>
+      </div>
+
+      <p class="placeholder-text">
+        Agende sua aula experimental e venha conhecer o My King is Immortal.
+      </p>
+
+      <div class="contact-grid">
+        <div class="contact-card">
+          <h3>WhatsApp</h3>
+          <p>(41) 9965-4711</p>
+          <a href="https://wa.me/5541999654711?text=Ol%C3%A1!%20Quero%20agendar%20uma%20aula%20experimental%20no%20My%20King%20is%20Immortal."
+            target="_blank" rel="noopener noreferrer" class="contact-link">
+            Chamar no WhatsApp
+          </a>
+        </div>
+
+        <div class="contact-card">
+          <h3>Endereço</h3>
+          <p>R. Engenheiro Costa Barros, 855 - 82950-420</p>
+          <p>Cajuru - Curitiba - PR</p>
+        </div>
+
+        <div class="contact-card">
+          <h3>Instagram</h3>
+          <p>@mykingisimmortal</p>
+          <p>@gustavoshowman</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <a href="https://wa.me/5541999654711?text=Ol%C3%A1!%20Quero%20agendar%20uma%20aula%20experimental%20no%20My%20King%20is%20Immortal."
+    target="_blank" rel="noopener noreferrer" class="whatsapp-float" aria-label="Fale conosco no WhatsApp">
+    <svg viewBox="0 0 32 32" aria-hidden="true">
+      <path
+        d="M19.11 17.23c-.27-.14-1.58-.78-1.82-.87-.24-.09-.42-.14-.6.14-.18.27-.69.87-.85 1.05-.16.18-.31.2-.58.07-.27-.14-1.12-.41-2.13-1.3-.79-.71-1.33-1.58-1.49-1.85-.16-.27-.02-.42.12-.56.13-.13.27-.31.4-.47.13-.16.18-.27.27-.45.09-.18.04-.34-.02-.47-.07-.14-.6-1.45-.82-1.99-.22-.53-.44-.46-.6-.47h-.51c-.18 0-.47.07-.71.34-.24.27-.93.91-.93 2.22 0 1.31.96 2.57 1.09 2.75.13.18 1.88 2.87 4.56 4.02.64.27 1.14.43 1.53.55.64.2 1.23.17 1.69.1.52-.08 1.58-.64 1.8-1.26.22-.62.22-1.15.16-1.26-.07-.11-.24-.18-.51-.31zM16.19 27.5h-.01a11.2 11.2 0 0 1-5.7-1.56l-.41-.24-4.24 1.11 1.13-4.13-.27-.42a11.2 11.2 0 1 1 9.5 5.24zm9.52-11.23A9.52 9.52 0 1 0 8.14 21.2l.3.47-.67 2.44 2.5-.66.46.27a9.5 9.5 0 0 0 4.84 1.32h.01a9.52 9.52 0 0 0 9.52-9.52z" />
+    </svg>
+    <span>WhatsApp</span>
+  </a>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 My King is Immortal. Todos os direitos reservados.</p>
+      <p class="footer-dev">
+        Desenvolvido por
+        <a href="https://www.linkedin.com/in/alissonjeansilva/" target="_blank" rel="noopener noreferrer">
+          Alisson Jean
+        </a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>
