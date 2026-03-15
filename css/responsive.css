@@ -3,8 +3,16 @@
     gap: 18px;
   }
 
-  .modalidades-grid {
-    grid-template-columns: repeat(2, 1fr);
+  .hero-layout {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .hero-side-inner {
+    min-height: 400px;
+    width: 100%;
+    max-width: 520px;
+    margin: 0 auto;
   }
 
   .mestre-grid {
@@ -14,21 +22,13 @@
   .mestre-highlight img {
     min-height: 520px;
   }
+
+  .modalidades-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media (max-width: 1100px) {
-  .hero-layout {
-    grid-template-columns: 1fr;
-    gap: 28px;
-  }
-
-  .hero-side-inner {
-    min-height: 380px;
-    width: 100%;
-    max-width: 520px;
-    margin: 0 auto;
-  }
-
   .instagram-post {
     flex: 0 0 33.3333%;
     min-width: 33.3333%;
@@ -120,6 +120,17 @@
     grid-template-columns: repeat(2, 1fr);
   }
 
+  .team-head {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .team-card {
+    flex: 0 0 280px;
+    width: 280px;
+    height: 390px;
+  }
+
   .instagram-head {
     flex-direction: column;
     align-items: flex-start;
@@ -202,6 +213,22 @@
     height: 280px;
   }
 
+  .team-card {
+    flex: 0 0 82%;
+    width: 82%;
+    height: 400px;
+  }
+
+  .team-header-actions {
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .team-nav {
+    width: 44px;
+    height: 44px;
+  }
+
   .instagram-post {
     flex: 0 0 85%;
     min-width: 85%;
@@ -236,6 +263,7 @@
   }
 
   .mestre-section,
+  .team-section,
   .modalidades-section,
   .instagram-section,
   .ct-section,
@@ -244,36 +272,5 @@
   .location-section,
   .contact-section {
     padding: 72px 0;
-  }
-}
-
-@media (max-width: 900px) {
-  .team-head {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .team-card {
-    flex: 0 0 280px;
-    width: 280px;
-    height: 390px;
-  }
-}
-
-@media (max-width: 600px) {
-  .team-card {
-    flex: 0 0 82%;
-    width: 82%;
-    height: 400px;
-  }
-
-  .team-header-actions {
-    width: 100%;
-    justify-content: flex-start;
-  }
-
-  .team-nav {
-    width: 44px;
-    height: 44px;
   }
 }

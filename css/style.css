@@ -352,8 +352,7 @@ a {
 /* MESTRE */
 .mestre-section {
   padding: 100px 0;
-  background:
-    linear-gradient(180deg, #050505 0%, #0c0c0c 100%);
+  background: linear-gradient(180deg, #050505 0%, #0c0c0c 100%);
 }
 
 .mestre-grid {
@@ -401,6 +400,122 @@ a {
   border: 1px solid rgba(255, 255, 255, 0.08);
 }
 
+/* EQUIPE */
+.team-section {
+  padding: 100px 0;
+  background: #050505;
+  overflow: hidden;
+}
+
+.team-container {
+  max-width: 1400px;
+}
+
+.team-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  gap: 20px;
+}
+
+.team-header-actions {
+  display: flex;
+  gap: 12px;
+}
+
+.team-slider-wrapper {
+  position: relative;
+}
+
+.team-slider {
+  display: flex;
+  gap: 18px;
+  overflow-x: hidden;
+  scroll-behavior: auto;
+  padding-bottom: 6px;
+}
+
+.team-slider::-webkit-scrollbar {
+  display: none;
+}
+
+.team-card {
+  position: relative;
+  flex: 0 0 320px;
+  width: 320px;
+  height: 430px;
+  overflow: hidden;
+  background: #111;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.team-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(241, 177, 0, 0.4);
+}
+
+.team-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.team-card-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.92) 12%,
+    rgba(0, 0, 0, 0.18) 58%,
+    rgba(0, 0, 0, 0.04) 100%
+  );
+}
+
+.team-card-content {
+  position: absolute;
+  left: 18px;
+  right: 18px;
+  bottom: 18px;
+  z-index: 2;
+}
+
+.team-badge {
+  display: inline-block;
+  background: #f1b100;
+  color: #000;
+  font-size: 0.78rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 8px 12px;
+  margin-bottom: 10px;
+}
+
+.team-card-content h3 {
+  font-size: 1.4rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.team-nav {
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 999px;
+  background: #f1b100;
+  color: #000;
+  font-size: 1.4rem;
+  font-weight: 900;
+  cursor: pointer;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.team-nav:hover {
+  transform: scale(1.05);
+  background: #ffd24d;
+}
+
 /* MODALIDADES */
 .modalidades-section {
   padding: 100px 0;
@@ -416,8 +531,7 @@ a {
 .modalidade-card {
   position: relative;
   padding: 30px 24px;
-  background:
-    linear-gradient(180deg, rgba(241, 177, 0, 0.08), rgba(255, 255, 255, 0.02));
+  background: linear-gradient(180deg, rgba(241, 177, 0, 0.08), rgba(255, 255, 255, 0.02));
   border: 1px solid rgba(255, 255, 255, 0.08);
   min-height: 250px;
   transition: 0.3s ease;
@@ -508,9 +622,8 @@ a {
 .instagram-slider {
   display: flex;
   gap: 2px;
-  overflow-x: auto;
-  scroll-behavior: smooth;
-  scrollbar-width: none;
+  overflow-x: hidden;
+  scroll-behavior: auto;
   width: 100%;
   background: #000;
   border-top: 1px solid rgba(255, 255, 255, 0.06);
@@ -814,115 +927,57 @@ a {
   color: #f1b100;
   font-weight: 700;
 }
-
-/* ATLETAS E PROFESSORES */
-.team-section {
-  padding: 100px 0;
-  background: #050505;
-  overflow: hidden;
-}
-
-.team-container {
-  max-width: 1400px;
-}
-
-.team-head {
-  display: flex;
-  justify-content: space-between;
-  align-items: end;
-  gap: 20px;
-}
-
-.team-header-actions {
-  display: flex;
-  gap: 12px;
-}
-
-.team-slider-wrapper {
-  position: relative;
-}
-
+.instagram-slider,
 .team-slider {
-  display: flex;
-  gap: 18px;
-  overflow-x: auto;
-  scroll-behavior: smooth;
-  scrollbar-width: none;
-  padding-bottom: 6px;
+  cursor: grab;
+  user-select: none;
+  -webkit-user-select: none;
 }
 
-.team-slider::-webkit-scrollbar {
-  display: none;
+.instagram-slider.dragging,
+.team-slider.dragging {
+  cursor: grabbing;
+  scroll-behavior: auto;
 }
 
-.team-card {
-  position: relative;
-  flex: 0 0 320px;
-  width: 320px;
-  height: 430px;
-  overflow: hidden;
-  background: #111;
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  transition: transform 0.3s ease, border-color 0.3s ease;
+.instagram-slider a,
+.team-slider .team-card {
+  -webkit-user-drag: none;
 }
 
-.team-card:hover {
-  transform: translateY(-4px);
-  border-color: rgba(241, 177, 0, 0.4);
-}
-
+.instagram-post img,
 .team-card img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  pointer-events: none;
+}
+/* DESTAQUE DO CARD CENTRAL */
+.instagram-post,
+.team-card {
+  transform: scale(0.94);
+  opacity: 0.72;
+  transition:
+    transform 0.35s ease,
+    opacity 0.35s ease,
+    border-color 0.35s ease,
+    box-shadow 0.35s ease;
 }
 
-.team-card-overlay {
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.92) 12%, rgba(0, 0, 0, 0.18) 58%, rgba(0, 0, 0, 0.04) 100%);
+.instagram-post.is-active,
+.team-card.is-active {
+  transform: scale(1);
+  opacity: 1;
+  z-index: 3;
 }
 
-.team-card-content {
-  position: absolute;
-  left: 18px;
-  right: 18px;
-  bottom: 18px;
-  z-index: 2;
+.team-card.is-active {
+  border-color: rgba(241, 177, 0, 0.45);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.28);
 }
 
-.team-badge {
-  display: inline-block;
-  background: #f1b100;
-  color: #000;
-  font-size: 0.78rem;
-  font-weight: 900;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  padding: 8px 12px;
-  margin-bottom: 10px;
+.instagram-post.is-active {
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.28);
 }
 
-.team-card-content h3 {
-  font-size: 1.4rem;
-  font-weight: 800;
-  text-transform: uppercase;
-}
-
-.team-nav {
-  width: 50px;
-  height: 50px;
-  border: none;
-  border-radius: 999px;
-  background: #f1b100;
-  color: #000;
-  font-size: 1.4rem;
-  font-weight: 900;
-  cursor: pointer;
-  transition: transform 0.3s ease, background 0.3s ease;
-}
-
-.team-nav:hover {
-  transform: scale(1.05);
-  background: #ffd24d;
+.instagram-slider,
+.team-slider {
+  align-items: center;
 }
